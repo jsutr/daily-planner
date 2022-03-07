@@ -66,14 +66,8 @@ body {
   }
   
   .saveBtn i:hover {
-    font-size: 20px;
+    font-size: 28px;
     transition: all .3s ease-in-out;
   }
   
-  .fas {
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    top: 30%;
-    left: 30%;
-  }
+  
