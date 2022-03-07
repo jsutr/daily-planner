@@ -31,17 +31,17 @@ $(document).ready(function () {
         $("#currentDay").html(moment().format('MMMM Do YYYY, HH:mm'));
     } setInterval(addDate, 1000);
 
-    for (var i = 0; i <= 12; i++) {
+    for (var i = 0; i <= 24; i++) {
         var inputHour = $("#" + i + "Row").attr("data-time");
         var inputHourInt = parseInt
 
-        if (currentHourInt === inputHourInt) {
+        if (currentHourInteger === inputHourInt) {
             $("#" + i + "Row").addClass("present");  
         }
-        if (currentHourInt > inputHourInt) { 
+        if (currentHourInteger > inputHourInt) { 
             $("#" + i + "Row").addClass("past");
         }
-        if (currentHourInt < inputHourInt) {  
+        if (currentHourInteger < inputHourInt) {  
             $("#" + i + "Row").addClass("future");
         }
     }
@@ -55,7 +55,7 @@ $(document).ready(function () {
     //retrieve input
 
     function renderPlans() {
-        for (var i = 0; i <= 12; i++) {
+        for (var i = 0; i <= 24; i++) {
             $("#" + i + "Row").val(localStorage.getItem(i));
         }
     }
