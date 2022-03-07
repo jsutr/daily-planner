@@ -4,3 +4,4 @@ This workday planner is meant to help visually depict typical workday hours to t
 <br></br>
 https://github.com/jsutr/daily-planner.git
 <br></br>
+<img width="875" alt="PlannerSS" src="https://user-images.githubusercontent.com/98308462/156989800-be1bb063-ddaf-42aa-90ca-6432b938516f.png">
