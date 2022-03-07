@@ -2,7 +2,7 @@
 
 var saveBtn = $(".saveBtn");
 var currentHour = moment().format("HH")
-var currentHourInterger = parseInt(currentHour);
+var currentHourInteger = parseInt(currentHour);
 
 
 // Attributes 
@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     for (var i = 0; i <= 24; i++) {
         var inputHour = $("#" + i + "Row").attr("data-time");
-        var inputHourInt = parseInt
+        var inputHourInt = parseInt(inputHour);
 
         if (currentHourInteger === inputHourInt) {
             $("#" + i + "Row").addClass("present");  
@@ -47,7 +47,7 @@ $(document).ready(function () {
     }
 
     saveBtn.on("click", function () {
-        var rowHour = $(this.attr("data-hour")); 
+        var rowHour = $(this).attr("data-hour"); 
         var input = $("#" + rowHour + "Row").val();
         localStorage.setItem(rowHour, input);
     });
@@ -60,4 +60,4 @@ $(document).ready(function () {
         }
     }
 
-})
+});
